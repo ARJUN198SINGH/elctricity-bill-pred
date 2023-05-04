@@ -1,0 +1,27 @@
+<html>
+<body>
+    <div class="login">
+       <h1>DRUG TYPE PREDICTION</h1>
+   
+        <!-- Main Input For Receiving Query to our ML -->
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+         <input type="text" name="Age" placeholder="Age" required="required" /><br>
+           <input type="text" name="Na_to_K" placeholder="Na_to_K" required="required" /><br>
+           <input type="text" name="Sex_F" placeholder="Sex_F" required="required" /><br>
+           <input type="text" name="Sex_M" placeholder="Sex_M" required="required" /><br>
+           <input type="text" name="BP_HIGH" placeholder="BP_HIGH" required="required" /><br>
+           <input type="text" name="BP_LOW" placeholder="BP_LOW" required="required" /><br>
+           <input type="text" name="BP_NORMAL" placeholder="BP_NORMAL" required="required" /><br>
+           <input type="text" name="Cholesterol_HIGH" placeholder="Cholesterol_HIGH" required="required" /><br>
+           <input type="text" name="Cholesterol_NORMAL" placeholder="Cholesterol_NORMAL" required="required" /><br>
+           
+
+
+
+           <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+       </form>
+    <h2>
+       DRUG TYPE IS {{result}}
+    </h2>
+   <body>
+</html>
