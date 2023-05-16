@@ -1,0 +1,26 @@
+<html>
+<body>
+    <div class="login">
+       <h1>ELECTRICITY PRICE PREDICTION</h1>
+   
+        <!-- Main Input For Receiving Query to our ML -->
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+         <input type="text" name="num_rooms" placeholder="num_rooms" required="required" /><br>
+           <input type="text" name="num_people" placeholder="num_people" required="required" /><br>
+           <input type="text" name="housearea" placeholder="housearea" required="required" /><br>
+           <input type="text" name="is_ac" placeholder="is_ac" required="required" /><br>
+           <input type="text" name="is_tv" placeholder="is_tv" required="required" /><br>
+           <input type="text" name="is_flat" placeholder="is_flat" required="required" /><br>
+           <input type="text" name="ave_monthly_income" placeholder="ave_monthly_income" required="required" /><br>
+           <input type="text" name="num_children" placeholder="num_children" required="required" /><br>
+           <input type="text" name="is_urban" placeholder="is_urban" required="required" /><br>
+           
+           
+
+           <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+       </form>
+    <h2>
+      Energy Bill is {{result}}
+    </h2>
+   <body>
+</html>
