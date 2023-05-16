@@ -33,6 +33,7 @@ def predict_datapoint():
        
 
         # stroke = float(request.form.get('stroke'))
+
         # compressionratio = float(request.form.get('compressionratio'))
         # horsepower = float(request.form.get('horsepower'))
         # peakrpm = float(request.form.get('peakrpm'))
